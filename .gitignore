@@ -3,3 +3,8 @@
 /.vscode
 /docs/html
 /docs/latex
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/FastLED_ATtinyX61/v16/.suo
+.vs/FastLED_ATtinyX61/v16/Browse.VC.db
