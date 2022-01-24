@@ -179,7 +179,7 @@ _FL_DEFPIN(12, 4, B); _FL_DEFPIN(13, 5, B); _FL_DEFPIN(14, 6, B); _FL_DEFPIN(15,
 
 #define HAS_HARDWARE_PIN_SUPPORT 1
 
-#elif defined(__AVR_ATtiny861__)
+#elif defined(__AVR_ATtiny861__) || defined(__AVR_ATtiny461__) || defined(__AVR_ATtiny261__)
 
 #define MAX_PIN 15
 
@@ -187,6 +187,14 @@ _FL_DEFPIN(0, 0, A);  _FL_DEFPIN(1, 1, A);   _FL_DEFPIN(2, 2, A);  _FL_DEFPIN(3,
 _FL_DEFPIN(4, 4, A);  _FL_DEFPIN(5, 5, A);   _FL_DEFPIN(6, 6, A);  _FL_DEFPIN(7, 7, A);
 _FL_DEFPIN(8, 0, B);  _FL_DEFPIN(9, 1, B);   _FL_DEFPIN(10, 2, B); _FL_DEFPIN(11, 3, B);
 _FL_DEFPIN(12, 4, B); _FL_DEFPIN(13, 5, B); _FL_DEFPIN(14, 6, B); _FL_DEFPIN(15, 7, B);
+
+/* Am I dumb or does this make sense? Like in the tinyNeoPixel port config for the tiny, it mentions port A and B with different ranges of pins
+* AKA Port A (pins 0~2, 10~14) and Port B (pins 3~9, 15)
+_FL_DEFPIN(0, 0, A);  _FL_DEFPIN(1, 1, A);   _FL_DEFPIN(2, 2, A);  _FL_DEFPIN(3, 0, B);
+_FL_DEFPIN(4, 1, B);  _FL_DEFPIN(5, 2, B);   _FL_DEFPIN(6, 3, B);  _FL_DEFPIN(7, 4, B);
+_FL_DEFPIN(8, 5, B);  _FL_DEFPIN(9, 6, B);   _FL_DEFPIN(10, 3, A); _FL_DEFPIN(11, 4, A);
+_FL_DEFPIN(12, 5, A); _FL_DEFPIN(13, 6, A); _FL_DEFPIN(14, 7, A); _FL_DEFPIN(15, 7, B);
+*/
 
 #define HAS_HARDWARE_PIN_SUPPORT 1
 
